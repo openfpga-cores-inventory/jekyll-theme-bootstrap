@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="h-100">
+
+  {%- include head.html -%}
+
+  <body class="d-flex flex-column h-100">
+
+    {%- include header.html -%}
+
+    <main class="flex-shrink-0">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+  </body>
+
+</html>
