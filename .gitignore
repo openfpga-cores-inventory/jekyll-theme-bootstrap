@@ -149,3 +149,6 @@ dist
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Bootstrap
+!_sass/bootstrap/vendor/
