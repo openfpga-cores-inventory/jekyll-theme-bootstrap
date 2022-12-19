@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["joshcampbell191@gmail.com"]
 
   spec.summary       = "Write a short summary, because Rubygems requires one."
-  spec.homepage      = "https://github.com/openfpga-cores-inventory/jekyll-theme-bootstrap"
+  spec.homepage      = "https://github.com/joshcampbell191/jekyll-theme-bootstrap"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
