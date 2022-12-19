@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openfpga-cores-inventory/theme.git"
+    "url": "git+https://github.com/openfpga-cores-inventory/jekyll-theme-bootstrap.git"
   },
   "author": "Joshua Campbell",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/openfpga-cores-inventory/theme/issues"
+    "url": "https://github.com/openfpga-cores-inventory/jekyll-theme-bootstrap/issues"
   },
-  "homepage": "https://github.com/openfpga-cores-inventory/theme#readme",
+  "homepage": "https://github.com/openfpga-cores-inventory/jekyll-theme-bootstrap#readme",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2"
