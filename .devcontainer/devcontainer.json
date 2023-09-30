@@ -8,10 +8,14 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {}
   },
-  "extensions": [
-    "editorconfig.editorconfig",
-    "sissel.shopify-liquid"
-  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "sissel.shopify-liquid"
+      ]
+    }
+  },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
     // Jekyll server
