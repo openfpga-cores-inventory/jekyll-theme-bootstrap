@@ -5,10 +5,12 @@
     target="_blank"
     title="{{ entry.title | default: entry.platform }}">
     {% case entry.platform %}
-      {% when "dribbble", "facebook", "github", "instagram", "linkedin", "mastodon", "pinterest", "rss", "telegram", "twitter", "youtube" %}
+      {% when "dribbble", "facebook", "github", "instagram", "linkedin", "mastodon", "pinterest", "rss", "telegram", "youtube" %}
       <i class="bi bi-{{ entry.platform }}"></i>
       {% when "stackoverflow" %}
       <i class="bi bi-stack-overflow"></i>
+      {% when "twitter" %}
+      <i class="bi bi-twitter-x"></i>
     {% else %}
       <i class="bi bi-link"></i>
     {% endcase %}
