@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="h-100">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" data-bs-theme="auto">
 
   {%- include head.html -%}
 
-  <body class="d-flex flex-column h-100">
+  <body>
 
     {%- include header.html -%}
 
-    <main class="flex-shrink-0">
-      <div class="container">
+    <div class="container-xxl mt-3 my-md-4">
+      <main id="content">
         {{ content }}
-      </div>
-    </main>
+      </main>
+    </div>
 
     {%- include footer.html -%}
 
     <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/color-mode-toggler.js' | relative_url }}"></script>
 
     {%- include custom-scripts.html -%}
   </body>
