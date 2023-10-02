@@ -5,6 +5,49 @@
 @import "bootstrap/bootstrap";
 @import "custom-styles";
 
-main > .container {
-  padding: 60px 15px 0;
+.skippy a {
+  color: #fff;
+}
+
+.bd-navbar {
+  padding: 0.75rem 0;
+  background-color: transparent;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15)
+}
+
+.bd-navbar::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  content: "";
+  background-image: linear-gradient(rgba(var(--bs-dark), 1), rgba(var(--bs-dark), 0.95))
+}
+
+.bd-navbar .bi {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentcolor;
+}
+
+.bd-navbar .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+.bd-footer a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.bd-footer a:hover,
+.bd-footer a:focus {
+  color: var(--bs-link-hover-color);
+  text-decoration: underline;
+}
+
+.bd-footer a.btn,
+.bd-footer a.btn:hover {
+  color: var(--bs-btn-color);
+  text-decoration: inherit;
 }
