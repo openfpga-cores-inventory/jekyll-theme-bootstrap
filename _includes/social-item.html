@@ -1,19 +1,19 @@
-<li class="mb-2">
+<li class="nav-item col-6 col-lg-auto">
   <a
-    {% unless entry.platform == 'rss' %}rel="me"{% endunless %}
+    class="nav-link py-2 px-0 px-lg-2"
     href="{{ entry.user_url }}"
     target="_blank"
-    title="{{ entry.title | default: entry.platform }}">
+    {% unless entry.platform == 'rss' %}rel="me"{% endunless %}>
     {% case entry.platform %}
-      {% when "dribbble", "facebook", "github", "instagram", "linkedin", "mastodon", "pinterest", "rss", "telegram", "youtube" %}
+      {% when 'dribbble', 'facebook', 'github', 'instagram', 'linkedin', 'mastodon', 'pinterest', 'rss', 'telegram', 'youtube' %}
       <i class="bi bi-{{ entry.platform }}"></i>
-      {% when "stackoverflow" %}
+      {% when 'stackoverflow' %}
       <i class="bi bi-stack-overflow"></i>
-      {% when "twitter" %}
+      {% when 'twitter' %}
       <i class="bi bi-twitter-x"></i>
     {% else %}
       <i class="bi bi-link"></i>
     {% endcase %}
-    {{ entry.title | default: entry.platform }}
+    <small class="d-lg-none ms-2">{{ entry.title | default: entry.platform }}</small>
   </a>
 </li>

@@ -18,7 +18,7 @@ layout: default
   {%- if page.list_title -%}
     <h3 class="pb-4 mb-4 fst-italic border-bottom">{{ page.list_title }}</h3>
   {%- endif -%}
-  {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
+  {%- assign date_format = site.bootstrap.date_format | default: '%b %-d, %Y' -%}
   {%- for post in posts -%}
     <article class="blog-post mb-5">
       <h2 class="blog-post-title mb-1">

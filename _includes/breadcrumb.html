@@ -1,0 +1,18 @@
+{%- if page.url != '/' -%}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb my-4 p-0">
+      <li class="breadcrumb-item">
+        <a href="/">Home</a>
+      </li>
+      {% for category in page.categories %}
+        {% assign category_paths = page.categories | slice: 0, forloop.index %}
+        <li class="breadcrumb-item text-capitalize">
+          <a href="{{ category_paths | join: '/' | append: '/' | relative_url }}">{{ category }}</a>
+        </li>
+      {% endfor %}
+      {% if page.title %}
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+      {% endif %}
+    </ol>
+  </nav>
+{%- endif -%}
