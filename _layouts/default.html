@@ -6,11 +6,13 @@
   <body>
     {%- include header.html -%}
 
-    <main class="container mt-3 my-md-4" id="content">
-      {%- include breadcrumb.html -%}
+    <div class="container-xxl mt-3 my-md-4">
+      <main id="content">
+        {%- include breadcrumb.html -%}
 
-      {{ content }}
-    </main>
+        {{ content }}
+      </main>
+    </div>
 
     {%- include footer.html -%}
 
