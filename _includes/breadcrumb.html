@@ -7,7 +7,7 @@
       {% for category in page.categories %}
         {% assign category_paths = page.categories | slice: 0, forloop.index %}
         <li class="breadcrumb-item">
-          <a href="{{ category_paths | join: '/' | append: '/' | relative_url }}">{{ category }}</a>
+          <a href="{{ category_paths | join: '/' | append: '/' | downcase | relative_url }}">{{ category }}</a>
         </li>
       {% endfor %}
       {% if page.title %}
