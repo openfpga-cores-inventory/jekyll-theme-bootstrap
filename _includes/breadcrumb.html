@@ -1,7 +1,7 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb my-4 p-0">
     <li class="breadcrumb-item">
-      <a href="/">Home</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
     </li>
     {% for category in page.categories %}
       {% assign paths = page.categories | slice: 0, forloop.index %}
