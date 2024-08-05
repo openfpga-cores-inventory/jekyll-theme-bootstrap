@@ -20,13 +20,13 @@ layout: default
   {%- endif -%}
   {%- assign date_format = site.bootstrap.date_format | default: '%b %-d, %Y' -%}
   {%- for post in posts -%}
-    <article class="blog-post mb-5">
-      <h2 class="blog-post-title mb-1">
+    <article class="mb-5">
+      <h2 class="mb-1">
         <a class="text-decoration-none" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h2>
-      <p class="blog-post-meta">{{ post.date | date: date_format }}</p>
+      <p>{{ post.date | date: date_format }}</p>
       {%- if site.show_excerpts -%}
         <p>{{ post.excerpt }}</p>
       {%- endif -%}
@@ -34,7 +34,7 @@ layout: default
   {%- endfor -%}
 
   {% if paginator.total_pages > 1 %}
-    <nav class="blog-pagination" aria-label="Pagination">
+    <nav aria-label="Pagination">
       <ul class="pagination">
         {%- if paginator.previous_page %}
           <li class="page-item">
